@@ -22,7 +22,7 @@ class DataRepository {
         case p if p.id == postId => p
     }
 
-    def getComment(postId: Int) : Seq[Comment] = comments.collect {
+    def getComments(postId: Int) : Seq[Comment] = comments.collect {
         case c if c.postId == postId => c
     }
 }
